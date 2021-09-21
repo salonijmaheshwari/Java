@@ -9,9 +9,14 @@ package com.mthree.classwork;
  *
  * @author salon
  */
-public class HelloWorld {
+public class BestAdderEver {
     public static void main(String[] args){
-        System.out.println("Hello World!!"); 
-        System.out.println("Hello Java");
-    }  
+    
+    int a=1,b=2,c=3;
+    int d = a+b+c;
+    
+    System.out.println(a+ " + " + b + " + " + c + " = "+ d);
+    System.out.println("Hello");
+    
+    }
 }

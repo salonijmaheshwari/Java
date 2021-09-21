@@ -9,9 +9,14 @@ package com.mthree.classwork;
  *
  * @author salon
  */
-public class HelloWorld {
-    public static void main(String[] args){
-        System.out.println("Hello World!!"); 
-        System.out.println("Hello Java");
-    }  
+public class practice {
+    public static void main(String[] args) {
+    int start = 12;
+    int stop = 21;
+
+    for(int i = start; i < stop; i++){
+        System.out.println("beep!");
+    }
+} 
+    
 }
