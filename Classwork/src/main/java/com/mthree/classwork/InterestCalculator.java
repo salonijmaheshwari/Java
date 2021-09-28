@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class InterestCalculator {
     public static void main(String args[]){
-        double temp = 0;
+        double temp;
         
         
         Scanner inputNumber= new Scanner(System.in);

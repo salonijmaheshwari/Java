@@ -24,10 +24,10 @@ public class LuckySeven {
         Random rm = new Random();
         maxDollar=totalMoney;
         
-        while(totalMoney != 0){
+        while(totalMoney > 0){
                         
-            int d1=rm.nextInt(6)+1;
-            int d2=rm.nextInt(6)+1;
+            int d1=1+rm.nextInt(6);
+            int d2=1+rm.nextInt(6);
             
             int sum=d1+d2;
             
