@@ -7,15 +7,19 @@ package com.mthree.classroster.ui;
 
 import com.mthree.classroster.dto.Student;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author salon
  */
+@Component
 public class ClassRosterView {
 
-    private UserIO io;
-
+    private final UserIO io;
+    
+    @Autowired
     public ClassRosterView(UserIO io) {
         this.io = io;
     }

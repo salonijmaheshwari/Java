@@ -24,17 +24,17 @@ public interface ClassRosterDao {
      * @param student student to be added to the roster
      * @return the Student object previously associated with the given  
      * student id if it exists, null otherwise
-     * @throws com.mthree.classroster.dao.ClassRosterDaoException
+     * @throws com.mthree.classroster.dao.ClassRosterPersistenceException
      */
-    Student addStudent(String studentId, Student student) throws ClassRosterDaoException;
+    Student addStudent(String studentId, Student student) throws ClassRosterPersistenceException;
 
     /**
      * Returns a List of all students in the roster.
      *
      * @return List containing all students in the roster.
-     * @throws com.mthree.classroster.dao.ClassRosterDaoException
+     * @throws com.mthree.classroster.dao.ClassRosterPersistenceException
      */
-    List<Student> getAllStudents() throws ClassRosterDaoException;
+    List<Student> getAllStudents() throws ClassRosterPersistenceException;
 
     /**
      * Returns the student object associated with the given student id.Returns null if no such student exists
@@ -42,9 +42,9 @@ public interface ClassRosterDao {
      * @param studentId ID of the student to retrieve
      * @return the Student object associated with the given student id,  
      * null if no such student exists
-     * @throws com.mthree.classroster.dao.ClassRosterDaoException
+     * @throws com.mthree.classroster.dao.ClassRosterPersistenceException
      */
-    Student getStudent(String studentId) throws ClassRosterDaoException;
+    Student getStudent(String studentId) throws ClassRosterPersistenceException;
 
     /**
      * Removes from the roster the student associated with the given id.Returns the student object that is being removed or null if
@@ -53,8 +53,8 @@ public interface ClassRosterDao {
      * @param studentId id of student to be removed
      * @return Student object that was removed or null if no student
      * was associated with the given student id
-     * @throws com.mthree.classroster.dao.ClassRosterDaoException
+     * @throws com.mthree.classroster.dao.ClassRosterPersistenceException
      */
-    Student removeStudent(String studentId) throws ClassRosterDaoException;
+    Student removeStudent(String studentId) throws ClassRosterPersistenceException;
     
 }

@@ -10,7 +10,9 @@ package com.mthree.classroster.ui;
  * @author salon
  */
 import java.util.Scanner;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserIOConsoleImpl implements UserIO {
 
     final private Scanner console = new Scanner(System.in);

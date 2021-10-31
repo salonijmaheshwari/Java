@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total,Date
+4,Pratham Rathi,CA,25.00,Carpet,290,3.50,4.15,652.50,609.00,315.38,1576.88,11-11-2121
+3,Parth Maheshwari,CA,25.00,Carpet,290,3.50,4.15,652.50,609.00,315.38,1576.88,12-12-2022
+5,Pratham Rathi,CA,25.00,Carpet,290,3.50,4.15,652.50,609.00,315.38,1576.88,12-12-2022
+1,Saloni Maheshwari,CA,25.00,Carpet,290,3.50,4.15,652.50,609.00,315.38,1576.88,10-30-2021
+2,Pankaj Rathi,CA,25.00,Carpet,290,3.50,4.15,652.50,609.00,315.38,1576.88,10-30-2021

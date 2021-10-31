@@ -1,0 +1,30 @@
+ String itemSelection;
+        BigDecimal inputMoney;
+
+        while (true) {
+            
+
+            try {
+
+                //Display the menu
+                getMenu();
+
+                //If the user selects Exit, the program is exited
+                inputMoney = getMoney();
+                itemSelection = getItemSelection();
+                if (itemSelection.equalsIgnoreCase("Exit")) {
+                    break;
+                } else if (itemSelection.isBlank()) {
+                    view.displayPleaseTryAgainMsg();
+                    break;
+
+                } else {
+                    getItem(itemSelection, inputMoney);
+                }
+
+            } catch (VendingMachineInsufficientFundsException | VendingMachineNoItemInventoryException | VendingMachinePersistenceException e) {
+                view.displayErrorMessage(e.getMessage());
+                view.displayPleaseTryAgainMsg();
+            }
+        }
+        exitMessage();
